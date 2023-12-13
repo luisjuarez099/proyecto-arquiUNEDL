@@ -6,7 +6,7 @@ import Button from "./Button";
 const Navbar = () => {
   const tamImage = 70;
   return (
-    <nav className="flexBetween max-container padding-container relative z-30 py-5">
+    <nav className="flexBetween max-container padding-container relative z-30 py-5 border">
       <Link href="/">
         <Image src={logo} alt="logo" width={tamImage} height={tamImage} />
       </Link>
