@@ -1,26 +1,122 @@
 export const NAV_LINKS = [
-    { href: '/',  key: 'Home' , label: 'Home' },
-    { href: '/nosotros', key: 'Nosotros' ,  label: 'Nosotros' },
-    { href: '/contacto', key: 'Contacto' ,  label: 'Contacto' },
-    { href: '/perfil', key: 'perfil' ,  label: 'Perfil' },   
+  { href: "/", key: "Home", label: "Home" },
+  // { href: '/Nosotros', key: 'Nosotros' ,  label: 'Nosotros' },
+  { href: "/Contacto", key: "Contacto", label: "Contacto" },
+  { href: "/Autos", key: "autos", label: "Automovil" },
+  { href: "/Perfil", key: "perfil", label: "Perfil" },
 ];
 
-
 export const FOOTER_LINKS = [
-    {
-        "href": '/',
-        "label": "Home"
-    },
-    {
-        "href": "/nosotros",
-        "label": "Nosotros"
-    },
-    {
-        "href": "/contacto",
-        "label": "Contacto"
-    },
-    {
-        "href": "/perfil",
-        "label": "Perfil"
-    }
+  {
+    href: "/",
+    label: "Home",
+  },
+  // {
+  //     "href": "/Nosotros",
+  //     "label": "Nosotros"
+  // },
+  {
+    href: "/Contacto",
+    label: "Contacto",
+  },
+  {
+    href: "/Autos",
+    label: "Perfil",
+  },
+  {
+    href: "/Perfil",
+    label: "Perfil",
+  },
+];
+
+export const Anio = [
+  "2023",
+  "2022",
+  "2022",
+  "2020",
+  "2020",
+  "2019",
+  "2018",
+  "2017",
+  "2016",
+  "2016",
+  "2015",
+  "2014",
+  "2013",
+  "2012",
+  "2011",
+  "2010",
+  "2009",
+  "2008",
+  "2007",
+  "2006",
+  "2005",
+  "2004",
+  "2003",
+  "2002",
+  "2001",
+  "2000",
+  "1999",
+  "1998",
+  "1997",
+  "1996",
+  "1995",
+  "1994",
+];
+
+export const Marca = [
+  "Toyota",
+  "Honda",
+  "Ford",
+  "Chevrolet",
+  "Nissan",
+  "Volkswagen",
+  "BMW",
+  "Mercedes-Benz",
+  "Audi",
+  "Hyundai",
+  "Kia",
+  "Mazda",
+  "Subaru",
+  "Volvo",
+  "Lexus",
+  "Infiniti",
+  "Land Rover",
+  "Jeep",
+  "GMC",
+  "Ram",
+];
+
+export const Modelo = [
+  "Corolla",
+  "Civic",
+  "Mustang",
+  "Camaro",
+  "Sentra",
+  "Golf",
+  "X5",
+  "C-Class",
+  "A4",
+  "Elantra",
+  "Sorento",
+  "CX-5",
+  "Forester",
+  "XC60",
+  "RX",
+  "Q50",
+  "Range Rover",
+  "Wrangler",
+  "Sierra",
+  "1500",
+  "Silverado",
+  "F-150",
+  "Tacoma",
+  "Frontier",
+  "Ridgeline",
+  "Canyon",
+  "Colorado",
+  "Ranger",
+  "Tundra",
+  "Titan",
+  "2500",
 ];

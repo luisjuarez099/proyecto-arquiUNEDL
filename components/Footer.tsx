@@ -5,7 +5,7 @@ import Image from "next/image";
 const Footer = () => {
   const tamImage = 70;
   return (
-    <footer className="text-gray-500 bg-white px-4 py-5 max-w-screen-xl mx-auto md:px-8 border ">
+    <footer className="text-gray-500 bg-white px-4 py-5 max-w-screen-xl mx-auto md:px-8 ">
       <div className="max-w-lg sm:mx-auto sm:text-center">
         <Image src={logoI} alt="" height={tamImage} width={tamImage} className="sm:mx-auto" />  
         <p>
