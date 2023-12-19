@@ -1,8 +1,9 @@
+import Login from '@/components/Login'
 import React from 'react'
 
 const Perfil = () => {
   return (
-    <div>Perfil</div>
+    <Login />
   )
 }
 

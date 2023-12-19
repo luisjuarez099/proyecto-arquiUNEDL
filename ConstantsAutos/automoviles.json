@@ -45,7 +45,11 @@
             {"Nombre":"Armada", "Anio":"2017"},
             {"Nombre":"Titan", "Anio":"2018"},
             {"Nombre":"Frontier", "Anio":"2019"},
-            {"Nombre":"370Z", "Anio":"2020"}
+            {"Nombre":"370Z", "Anio":"2020"},
+            {"Nombre":"GT-R", "Anio":"2021"},
+            {"Nombre":"Kicks", "Anio":"2022"},
+            {"Nombre":"March", "Anio":"2023"}
+            
         ]
     },
     {
@@ -130,7 +134,7 @@
         ]
     },
     {
-        "Marca":"Mercedes Benz",
+        "Marca":"Mercedes-Benz",
         "Modelo":[
             {"Nombre":"Clase A", "Anio":"2010"},
             {"Nombre":"Clase B", "Anio":"2011"},
