@@ -14,9 +14,9 @@ export async function GET() {
 
 export async function POST(request) {
   try {
-    const body = await request.body;
-    const userData = body.formData;
-    await User.create(userData);
+    const body = await request.json(); //obtener el body de la peticion en formato json para poder usarlo
+    const userInfo = body.formData;
+    await User.create(userInfo);
 
     return NextResponse.json({ message: "Usuario creado exitosamente :) " }, { "Estatus": 201 });
   } catch (error) {

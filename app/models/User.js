@@ -11,5 +11,5 @@ const userSchema= new Schema({
     password:String,
 
 });
-const User = mongoose.models.User || mongoose.model('User', userSchema);
+const User = mongoose.models.User || mongoose.model('User', userSchema); //si ya existe el modelo lo usa, si no lo crea
 export default User;

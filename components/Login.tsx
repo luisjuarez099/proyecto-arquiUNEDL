@@ -5,12 +5,16 @@ import { useState } from "react";
 const Login = () => {
 
   const startUserData = {
-    username: "",
-    email: "",
-    password: "",
+    username: '',
+    email: '',
+    password: '',
   };
 
   const [formData, setUserData] = useState(startUserData);
+  console.log(formData+ " formdata");
+  for(let i in formData){
+    console.log(formData);
+  }
   const router = useRouter();
 
   const handleChange = (e: any) => {
@@ -25,13 +29,14 @@ const Login = () => {
   const handleSubmit = async (event: any) => {
     try {
       console.log("submited");
+
       event.preventDefault();
       const res = await fetch("/api/Login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify( formData ), 
+        body: JSON.stringify({ formData }), 
       });
 
       if (!res.ok) {
@@ -49,7 +54,6 @@ const Login = () => {
   };
 
   
-  console.log(formData);
 
   
   return (
