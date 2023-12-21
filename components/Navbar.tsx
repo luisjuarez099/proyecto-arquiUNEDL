@@ -2,7 +2,6 @@ import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "/public/logo.png";
-import Button from "./Button";
 const Navbar = () => {
   const tamImage = 70;
   return (
@@ -26,7 +25,10 @@ const Navbar = () => {
 
       {/* Boton para el login */}
       <div>
-        <Button />
+        <button className="regular-16 text-gray-50 flexCenter cursor-pointer 
+                pb-1.5 transition-all hover:font-bold">
+          Login
+        </button>
       </div>
     </nav>
   );

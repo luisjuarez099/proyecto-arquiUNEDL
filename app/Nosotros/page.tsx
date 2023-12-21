@@ -1,11 +1,12 @@
 import React from 'react'
 import {Heading, Text} from '@radix-ui/themes' 
+import Informacion from '@/components/Informacion'
 const Nosotros = () => {
   return (
     <div>
-        <Heading size="4">
-            Nosotros
-        </Heading>
+        <div>
+          <Informacion />
+        </div>
     </div>
   )
 }

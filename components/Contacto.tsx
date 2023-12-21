@@ -10,6 +10,7 @@ const Contacto = () => {
   const [Correo, setCorreo] = useState("");
   const [Telefono, setTelefono] = useState("");
   const [Mensaje, setMensaje] = useState("");
+
   const handleSubmit = async (event: any) => {
     try {
       event.preventDefault(); // Evita que se recargue la pagina
@@ -35,7 +36,7 @@ const Contacto = () => {
 
 
     router.refresh();
-    router.push("/Contacto");// Redireccionamos a la pagina de inicio
+    router.push("/");// Redireccionamos a la pagina de inicio
 
     
   };
@@ -45,6 +46,7 @@ const Contacto = () => {
         <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
           <div className="max-w-lg mx-auto gap-12 justify-between lg:flex lg:max-w-none">
             <div className="max-w-lg space-y-3">
+             
               <h3 className="text-indigo-600 font-semibold">Contact</h3>
               <p className="text-gray-800 text-3xl font-semibold sm:text-4xl">
                 Haz Contacto, Haz Amigos
@@ -78,6 +80,8 @@ const Contacto = () => {
                 </ul>
               </div>
             </div>
+            
+            {/* Aqui comienza el envio de informacion para el contacto con el cliente */}
             <div className="flex-1 mt-12 sm:max-w-lg lg:max-w-md">
               <form onSubmit={handleSubmit} className="space-y-5" method="POST">
                 {/* Nombre de la persona */}
@@ -87,7 +91,7 @@ const Contacto = () => {
                   </label>
                   <input
                     onChange={(e) => setNombre(e.target.value)} // Actualiza el estado de la variable fullName
-                    value={Nombre} // Asigna el valor de la variable fullName
+                    value={Nombre.toLowerCase()} // Asigna el valor de la variable fullName
                     type="text"
                     required
                     className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
@@ -100,11 +104,12 @@ const Contacto = () => {
                   </label>
                   <input
                     onChange={(e) => setCorreo(e.target.value)}
-                    value={Correo}
+                    value={Correo.toLowerCase()}
                     type="email"
                     required
                     className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
                   />
+                  
                 </div>
                 {/* Telefono */}
                 <div>
@@ -115,6 +120,7 @@ const Contacto = () => {
                     onChange={(e) => setTelefono(e.target.value)}
                     value={Telefono}
                     type="tel"
+                    max={10}
                     placeholder="+(52) 000-000-000-0"
                     required
                     className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg"
@@ -134,7 +140,7 @@ const Contacto = () => {
                 </div>
                 {/* Boton de enviar */}
                 <button className="w-full px-4 py-2 text-white font-medium bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 rounded-lg duration-150">
-                  Submit
+                  Enviar
                 </button>
               </form>
             </div>

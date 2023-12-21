@@ -2,7 +2,7 @@ export const NAV_LINKS = [
   { href: "/", key: "Home", label: "Home" },
   // { href: '/Nosotros', key: 'Nosotros' ,  label: 'Nosotros' },
   { href: "/Contacto", key: "Contacto", label: "Contacto" },
-  { href: "/Autos", key: "autos", label: "Automovil" },
+  { href: "/Autos", key: "autos", label: "Catalogo" },
   { href: "/Perfil", key: "perfil", label: "Perfil" },
 ];
 
@@ -21,11 +21,15 @@ export const FOOTER_LINKS = [
   },
   {
     href: "/Autos",
-    label: "Perfil",
+    label: "Catalogo",
   },
   {
     href: "/Perfil",
     label: "Perfil",
+  },
+  {
+    href: "/Empleo",
+    label: "Chamba",
   },
 ];
 
