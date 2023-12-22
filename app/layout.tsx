@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import "@radix-ui/themes/styles.css";
 import { Theme } from "@radix-ui/themes";
 const inter = Inter({ subsets: ["latin"] });
+import Providers from "./Providers";
 
 export const metadata: Metadata = {
   title: "Refaccionaria",
@@ -20,13 +21,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
+        <Providers>
+          <Navbar />
           <Theme>
-        <main className="relative  overflow-hidden ">
-            {children}
-        </main>
+            <main className="relative  overflow-hidden ">{children}</main>
           </Theme>
-        <Footer />
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

@@ -15,8 +15,8 @@ export async function POST(request: Request) {
   }
 
   //validar que el email y el usuario no exista
-  const emailFind = await User.findOne({ email });
-  const userFind =  await User.findOne({ username });
+  const emailFind = await User.findOne({ email }); //buscamos el email en la base de datos
+  const userFind =  await User.findOne({ username }); //buscamos el usuario en la base de datos
 
   if (emailFind || userFind) {
     return NextResponse.json(
@@ -35,8 +35,13 @@ export async function POST(request: Request) {
   });
 
   const userSave = await user.save(); //guardamos el usuario en la base de datos
-  console.log(userSave);
+  
+  // console.log(userSave);
 
   console.log(username, email, password);
-  return NextResponse.json(userSave);
+  return NextResponse.json({
+    _id: userSave._id,
+    email: userSave.email,
+    username: userSave.username,
+  });
 }
